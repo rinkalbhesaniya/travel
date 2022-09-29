@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  height: 50px;
+}
+.name {
+  display: flex;
+  font-size: 24px;
+  margin-top: 10px;
+  font-style: normal;
+  justify-content: left;
+  padding-left: 50px;
+  font-weight: bold;
+}
+.link {
+  display: flex;
+  text-align: right;
+  //font-size: 20px;
+  justify-content: space-evenly;
+  list-style-type: none;
+  // padding-right: 80px;
+  padding-top: 8px;
+}
+
+.nav-link {
+  cursor: pointer;
+  padding: 5px;
+}

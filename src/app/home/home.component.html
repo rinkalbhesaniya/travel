@@ -1,0 +1,120 @@
+<div class="back-image">
+  <app-header></app-header>
+  <div class="whole col-md-6">The whole world awaits.</div>
+  <div class="detail row">
+    <div class="detail1 col-md-6">
+      <img src="assets/search.png" alt="img not found" />
+      <input
+        type="text"
+        placeholder="search destination,hotels"
+        class="input"
+      />
+      <input type="date" placeholder="check in" class="date1" />
+    </div>
+    <div class="detail2 col-md-6">
+      <input type="date" placeholder="check in" class="date2" />
+      <img
+        src="assets/man.png"
+        alt="img not found"
+        width="20px"
+        height="20px"
+        style="margin-left: 40px"
+      />
+      <div class="room">1 room,2 adults</div>
+      <div class="button">search</div>
+    </div>
+  </div>
+  <div class="top row">Top categories</div>
+  <div class="icon row">
+    <div *ngFor="let category of categories" class="category col-md-1">
+      <img [src]="category.img" alt="img not found" />
+      <div class="beaches">{{ category.name }}</div>
+    </div>
+  </div>
+</div>
+<div class="vacation">
+  <div class="top row">Top Vacation Destinations</div>
+  <div class="container">
+    <div *ngFor="let destination of destinations" class="img col-md-3">
+      <img
+        [src]="destination.image"
+        alt="img not found"
+        style="border-radius: 20px"
+      />
+      <div class="bottom-left">{{ destination.name }}</div>
+    </div>
+  </div>
+</div>
+<div class="offerstext row">Offers</div>
+<div class="offers row">
+  <div class="offersbox1 col-md-6">
+    <div class="flightData">
+      <div class="flight">
+        <img
+          src="../../assets/image19.svg"
+          alt="img not found"
+          style="
+            height: 170px;
+            width: 240px;
+            border-radius: 10px;
+            margin-top: 15px;
+          "
+        />
+      </div>
+
+      <div class="flightext">
+        <div class="domestic">Domestic Flights</div>
+        <div class="huge">Huge savings on flight with trxvl.</div>
+        <div class="domestic">Book domestic flights starting @ just ₹1459</div>
+        <div class="book">Book Now</div>
+      </div>
+    </div>
+  </div>
+  <div class="offersbox2 col-md-6">
+    <div class="flightData">
+      <div class="flight">
+        <img
+          src="../../assets/image19(1).svg"
+          alt="img not found"
+          style="margin-top: 15px; border-radius: 10px; width: 240px"
+        />
+      </div>
+
+      <div class="flightext">
+        <div class="domestic">Domestic Flights</div>
+        <div class="huge">Huge savings on flight with trxvl.</div>
+        <div class="domestic">Book domestic flights starting @ just ₹1459</div>
+        <div class="book">Book Now</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="img col-md-3">
+    <img src="assets/kerry.svg" alt="img not found" />
+    <div class="bottom-left">Kerry,Ireland</div>
+  </div>
+  <div class="img col-md-3">
+    <img src="assets/sydney.svg" alt="img not found" />
+    <div class="bottom-left">Sydney Australia</div>
+  </div>
+  <div class="img col-md-3 position">
+    <img src="assets/paris.svg" alt="img not found" />
+    <div class="bottom-left">Paris,France</div>
+  </div> -->
+
+<div class="browse row">
+  <div *ngFor="let pro of property" class="img col-md-3">
+    <img [src]="pro.image" alt="img not found" />
+    <div class="bottom-left">{{ pro.name }}</div>
+  </div>
+</div>
+<div class="plan col-md-12">
+  <div class="planImage">
+    <div class="plantext">Plan your trip with travel</div>
+    <div class="plantextexpert">expert</div>
+    <div class="our">
+      Our professional advisors can craft your perfect itinerary
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
